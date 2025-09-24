@@ -9,13 +9,13 @@ class PortfolioController extends Controller
     public function index()
     {
         $portfolio = [
-            'name' => 'Brew Haven',
-            'title' => 'Freshly Brewed Happiness',
-            'email' => 'brew.haven@example.com',
-            'phone' => '+639298932030',
-            'location' => 'Manila, Philippines',
+            'name' => 'jiem coffee',
+            'title' => 'coffee',
+            'email' => 'jugan.johnmark.bandico@gmail.com',
+            'phone' => '09301691327',
+            'location' => 'Manila, balingasa',
             'bio' => 'At Brew Haven, we serve freshly brewed coffee and pastries made with love. Our goal is to bring comfort and energy with every cup!',
-            'profile_image' => 'https://img.freepik.com/premium-photo/light-coffee-background_670147-41733.jpg',
+            'profile_image' => 'https://wallpapers.com/images/hd/coffee-cup-dark-aesthetic-l5c8uth00nnwfu0n.jpg',
 
             // Removed projects
             'skills' => ['Cappuccino', 'Latte', 'Espresso', 'Cold Brew'],

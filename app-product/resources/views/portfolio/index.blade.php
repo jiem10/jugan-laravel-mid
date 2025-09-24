@@ -8,12 +8,18 @@
 <div style="background: url('https://img.freepik.com/premium-photo/light-coffee-background_670147-41733.jpg') no-repeat center center/cover; background-attachment: fixed; min-height: 100vh; color: #fff;">
 
     <!-- Hero Section -->
-    <section class="hero-section text-center d-flex align-items-center justify-content-center" style="min-height: 100vh; background: rgba(0,0,0,0.6);">
-        <div class="container">
-            <h1 class="display-2 fw-bold">{{ $portfolio['name'] }}</h1>
-            <p class="lead">{{ $portfolio['title'] }}</p>
-        </div>
-    </section>
+   <section class="hero-section text-center d-flex align-items-center justify-content-center" 
+    style="min-height: 100vh; background: url('{{ $portfolio['profile_image'] }}') no-repeat center center/cover; position: relative;">
+
+    <!-- Dark overlay -->
+    <div style="position: absolute; top:0; left:0; width:100%; height:100%; background: rgba(0,0,0,0.6);"></div>
+
+    <div class="container position-relative text-white">
+        <h1 class="display-2 fw-bold">{{ $portfolio['name'] }}</h1>
+        <p class="lead">{{ $portfolio['title'] }}</p>
+    </div>
+</section>
+
 
     <!-- About Section -->
     <section id="about" class="section py-5" style="background: rgba(0,0,0,0.7);">
